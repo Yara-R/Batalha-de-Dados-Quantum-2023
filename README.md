@@ -29,5 +29,4 @@ A otimização de carteira de investimentos é uma tarefa complexa que envolve a
 ## Tecnologias Utilizadas
 
 - Linguagem de Programação: Python
-- Bibliotecas Python:
-- Ferramentas Quanticas: 
+- Bibliotecas Python: Qiskit 
