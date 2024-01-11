@@ -1,0 +1,168 @@
+Facil - Seed = 120:
+
+
+Relatorio QAOA:
+
+----------------------------------------------------------------------------------------------------
+Estatísticas da carteira
+----------------------------------------------------------------------------------------------------
+variaveis_resposta: [1 0 0 1 1 0]
+funcao_objetivo: -0.11901964744963879
+quantidade_produtos: 3
+avaliacao_risco: 2
+risco: 0.06796058561800365
+retorno: 0.1236382886471808
+sharpe: 1.8192646152599865
+alocacao: 1.0
+----------------------------------------------------------------------------------------------------
+Produtos selecionados
+----------------------------------------------------------------------------------------------------
+      classe     produto  aval  aloc
+45  classe_1  produto_45     1   0.3
+63  classe_2  produto_63     0   0.3
+93  classe_3  produto_93     1   0.4
+
+
+Relatorio VQE:
+
+----------------------------------------------------------------------------------------------------
+Estatísticas da carteira
+----------------------------------------------------------------------------------------------------
+variaveis_resposta: [0 1 0 1 1 0]
+funcao_objetivo: -0.14909918197551966
+quantidade_produtos: 3
+avaliacao_risco: 5
+risco: 0.10290863309729419
+retorno: 0.1596893687414732
+sharpe: 1.5517587197032934
+alocacao: 1.0
+----------------------------------------------------------------------------------------------------
+Produtos selecionados
+----------------------------------------------------------------------------------------------------
+       classe      produto  aval  aloc
+50   classe_1   produto_50     1   0.3
+65   classe_2   produto_65     2   0.3
+104  classe_3  produto_104     2   0.4
+
+Conclusao:
+É possível verificar que para o desafio quântico de nível fácil, ambas as soluções apresentadas
+pela equipe apresentam a mesma resposta [1 0 0 1 1 0], que é uma resposta válida. Comparando o
+resultado da função objetivo, nota-se que a solução através do VQE apresentou uma minimização
+melhor, ou seja, menor. Ambas as abordagens apresentaram a quantidade correta de produtos, 3.
+A avaliação de risco obtida através do QAOA foi menor (melhor) que a do VQE. O risco também
+apresenta valor melhor (menor) através do QAOA do que pelo VQE. O retorno apresenta valor melhor
+(maior) através do VQE do que pelo QAOA.
+
+
+
+Medio - Seed = 21:
+
+
+Relatorio QAOA:
+
+----------------------------------------------------------------------------------------------------
+Estatísticas da carteira
+----------------------------------------------------------------------------------------------------
+variaveis_resposta: [1 0 0 1 1 0]
+funcao_objetivo: -0.09857454482156587
+quantidade_produtos: 3
+avaliacao_risco: 4
+risco: 0.04158042740567758
+retorno: 0.1003034767648047
+sharpe: 2.4122762324253744
+alocacao: 1.0
+----------------------------------------------------------------------------------------------------
+Produtos selecionados
+----------------------------------------------------------------------------------------------------
+      classe     produto  aval  aloc
+19  classe_1  produto_19     2   0.3
+83  classe_2  produto_83     1   0.3
+94  classe_3  produto_94     1   0.4
+
+
+Relatorio VQE:
+
+----------------------------------------------------------------------------------------------------
+Estatísticas da carteira
+----------------------------------------------------------------------------------------------------
+variaveis_resposta: [0 1 1 0 0 1]
+funcao_objetivo: -0.07450185318000209
+quantidade_produtos: 3
+avaliacao_risco: 3
+risco: 0.11253391605877898
+retorno: 0.0871657354435264
+sharpe: 0.774573022038954
+alocacao: 1.0
+----------------------------------------------------------------------------------------------------
+Produtos selecionados
+----------------------------------------------------------------------------------------------------
+      classe     produto  aval  aloc
+37  classe_1  produto_37     0   0.3
+72  classe_2  produto_72     1   0.3
+99  classe_3  produto_99     2   0.4
+
+Conclusao:
+É possível verificar que para o desafio quântico de nível médio, ambas as soluções apresentadas
+foram válidas, apesar de valores diferentes. Comparando o resultado da função objetivo, nota-se
+que a solução através do QAOA apresentou uma minimização melhor, ou seja, menor. Ambas as
+abordagens apresentaram a quantidade correta de produtos, 3. Na avaliação de risco obtida através
+do QAOA e pelo VQE, ambas atendem a restrição, 4. O risco  apresenta valor melhor (menor) através
+do QAOA do que pelo VQE. O retorno também apresenta valor melhor (maior) através do QAOA do que
+pelo VQE.
+
+
+
+
+Dificil - Seed = 71:
+
+
+Relatorio QAOA:
+
+----------------------------------------------------------------------------------------------------
+Estatísticas da carteira
+----------------------------------------------------------------------------------------------------
+variaveis_resposta: [1 0 0 1 1 0]
+funcao_objetivo: -0.13436456998965132
+quantidade_produtos: 3
+avaliacao_risco: 4
+risco: 0.10011347495450779
+retorno: 0.1443872778571182
+sharpe: 1.4422362016974108
+alocacao: 1.0
+----------------------------------------------------------------------------------------------------
+Produtos selecionados
+----------------------------------------------------------------------------------------------------
+       classe      produto  aval  aloc
+40   classe_1   produto_40     0   0.3
+65   classe_2   produto_65     2   0.3
+104  classe_3  produto_104     2   0.4
+
+
+Relatorio VQE:
+
+----------------------------------------------------------------------------------------------------
+Estatísticas da carteira
+----------------------------------------------------------------------------------------------------
+variaveis_resposta: [1 0 0 1 0 1]
+funcao_objetivo: -0.10944869084829069
+quantidade_produtos: 3
+avaliacao_risco: 4
+risco: 0.1565021720640941
+retorno: 0.13394162070907
+sharpe: 0.8558451230581987
+alocacao: 1.0
+----------------------------------------------------------------------------------------------------
+Produtos selecionados
+----------------------------------------------------------------------------------------------------
+      classe     produto  aval  aloc
+40  classe_1  produto_40     0   0.3
+65  classe_2  produto_65     2   0.3
+99  classe_3  produto_99     2   0.4
+
+Conclusao:
+É possível verificar que para o desafio quântico de nível difícil, ambas as soluções apresentadas
+foram válidas, apesar de valores diferentes. Comparando o resultado da função objetivo, nota-se
+que a solução através do QAOA apresentou uma minimização melhor, ou seja, menor. Ambas as
+abordagens apresentaram a quantidade correta de produtos, 3. Na avaliação de risco obtida através
+do QAOA e pelo VQE, ambas atendem a restrição, 4. O risco  apresenta valor melhor (menor) através do
+VQE do que pelo QAOA. O retorno apresenta valor melhor (maior) através do QAOA do que pelo VQE.

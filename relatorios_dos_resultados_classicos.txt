@@ -1,0 +1,123 @@
+Ao realizar a troca do solver no cenário clássico, foram encontrados diferentes resultados e mensagens de erro, indicando a compatibilidade e capacidade dos solvers em lidar com o problema específico. Abaixo estão as análises para cada solver utilizado:
+
+CBC:
+
+Erro: SolverError: Either candidate conic solvers (['CBC']) do not support the cones output by the problem (SOC, NonNeg, Zero), or there are not enough constraints in the problem.
+
+Comentário: O solver CBC não suporta as restrições do tipo cones (SOC, NonNeg, Zero) presentes no problema ou não há restrições suficientes.
+
+
+CVXOPT:
+
+Erro: SolverError: Problem is mixed-integer, but candidate QP/Conic solvers ([]) are not MIP-capable.
+
+Comentário: O solver CVXOPT não suporta problemas mistos-integer (MIP) e, portanto, não é capaz de resolver o problema proposto.
+
+
+GLOP:
+
+Erro: SolverError: Problem is mixed-integer, but candidate QP/Conic solvers ([]) are not MIP-capable.
+
+Comentário: O solver GLOP também não é capaz de lidar com problemas mistos-integer (MIP).
+
+
+GLPK:
+
+Erro: SolverError: Problem is mixed-integer, but candidate QP/Conic solvers ([]) are not MIP-capable.
+
+Comentário: O solver GLPK não suporta problemas mistos-integer (MIP).
+
+
+GUROBI:
+
+Erro: SolverError: Solver 'GUROBI' failed. Try another solver, or solve with verbose=True for more information.
+
+Comentário: O solver GUROBI falhou na resolução do problema, portanto, assume-se que ele não é capaz de resolver o problema proposto.
+
+
+MOSEK:
+
+Erro: rescode.err_missing_license_file(1008): License cannot be located. The default search path is ':/home/ec2-user/mosek/mosek.lic:'.
+
+Comentário: O solver MOSEK encontrou um problema relacionado à licença, indicando que o arquivo de licença não pôde ser localizado no caminho padrão apesar de ter sido instalado no kernel.
+
+
+PDLP:
+
+Erro: SolverError: Problem is mixed-integer, but candidate QP/Conic solvers ([]) are not MIP-capable.
+
+Comentário: O solver PDLP não suporta problemas mistos-integer (MIP).
+
+
+SCIP:
+
+Tempo de execução: 4.26 segundos
+Valor da função objetiva (risco total): -495.5161994641646
+Somatorio dos aval: 7.217499999999999
+
+Produtos escolhidos por classe:
+Produtos escolhidos classe_0: (['produto_1', 'produto_2', 'produto_4', 'produto_15', 'produto_16'], [0.48, 0.2, 0.16, 0.52, 0.12])
+Produtos escolhidos classe_1: (['produto_40', 'produto_41'], [0.4, 0.55])
+Produtos escolhidos classe_2: (['produto_75', 'produto_77', 'produto_82'], [0.4499999999999999, 0.15, 0.4499999999999999])
+Produtos escolhidos classe_3: (['produto_96'], [0.35])
+Produtos escolhidos classe_4: (['produto_153'], [0.6000000000000001])
+Produtos escolhidos classe_5: (['produto_195', 'produto_197', 'produto_200', 'produto_243'], [0.1, 0.1, 0.1, 0.1125])
+Produtos escolhidos classe_6: (['produto_277', 'produto_404'], [0.2, 0.1])
+Produtos escolhidos classe_7: (['produto_408', 'produto_409'], [0.4, 0.675])
+Produtos escolhidos classe_8: (['produto_613'], [0.2])
+Produtos escolhidos classe_9: (['produto_619'], [0.8])
+
+Comentário: SCIP foi capaz de resolver o problema com sucesso, fornecendo a solução mais demorada em 4.26 segundos.
+
+
+XPRESS:
+Tempo de execução: 0.08 segundos
+Valor da função objetiva (risco total): -495.5161994641646
+Somatorio dos aval: 7.217499999999999
+
+Produtos escolhidos por classe:
+Produtos escolhidos classe_0: (['produto_1', 'produto_2', 'produto_4', 'produto_15', 'produto_16'], [0.48, 0.2, 0.16, 0.52, 0.12])
+Produtos escolhidos classe_1: (['produto_40', 'produto_41'], [0.4, 0.55])
+Produtos escolhidos classe_2: (['produto_75', 'produto_77', 'produto_82'], [0.4499999999999999, 0.15, 0.4499999999999999])
+Produtos escolhidos classe_3: (['produto_96'], [0.35])
+Produtos escolhidos classe_4: (['produto_153'], [0.6000000000000001])
+Produtos escolhidos classe_5: (['produto_195', 'produto_197', 'produto_200', 'produto_243'], [0.1, 0.1, 0.1, 0.1125])
+Produtos escolhidos classe_6: (['produto_277', 'produto_404'], [0.2, 0.1])
+Produtos escolhidos classe_7: (['produto_408', 'produto_409'], [0.4, 0.675])
+Produtos escolhidos classe_8: (['produto_613'], [0.2])
+Produtos escolhidos classe_9: (['produto_619'], [0.8])
+
+Comentário: O solver XPRESS também foi capaz de resolver o problema com sucesso, fornecendo a solução mais rapidamente em apenas 0.08 segundos.
+
+
+CPLEX:
+
+Tempo de execução: 2.26 segundos
+Valor da função objetiva (risco total): -495.5161994641646
+Somatorio dos aval: 7.217499999999999
+
+Produtos escolhidos por classe:
+Produtos escolhidos classe_0: (['produto_1', 'produto_2', 'produto_4', 'produto_15', 'produto_16'], [0.48, 0.2, 0.16, 0.52, 0.12])
+Produtos escolhidos classe_1: (['produto_40', 'produto_41'], [0.4, 0.55])
+Produtos escolhidos classe_2: (['produto_75', 'produto_77', 'produto_82'], [0.4499999999999999, 0.15, 0.4499999999999999])
+Produtos escolhidos classe_3: (['produto_96'], [0.35])
+Produtos escolhidos classe_4: (['produto_153'], [0.6000000000000001])
+Produtos escolhidos classe_5: (['produto_195', 'produto_197', 'produto_200', 'produto_243'], [0.1, 0.1, 0.1, 0.1125])
+Produtos escolhidos classe_6: (['produto_277', 'produto_404'], [0.2, 0.1])
+Produtos escolhidos classe_7: (['produto_408', 'produto_409'], [0.4, 0.675])
+Produtos escolhidos classe_8: (['produto_613'], [0.2])
+Produtos escolhidos classe_9: (['produto_619'], [0.8])
+
+Comentário: CPLEX conseguiu resolver o problema com sucesso, fornecendo uma solução ótima em 2.26 segundos.
+
+
+
+Conclusões Gerais:
+
+- SCIP, XPRESS e CPLEX foram os solvers bem-sucedidos, apresentando resultados consistentes e tempo de execução razoável.
+
+- XPRESS apresentou menor tempo (0.08 segundos), enquanto SCIP apresentou o maior tempo (4.26 segundos)
+
+- Solver MOSEK falhou devido à ausência de uma licença.
+
+- CBC, CVXOPT, GLOP, GLPK, GUROBI e PDLP não foram eficazes para a resolução do problema devido a limitações específicas ou falhas.
