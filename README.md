@@ -12,7 +12,9 @@
 
 ## Batalha de Dados Quantum
 
-Este repositório contém o código desenvolvido pela equipe 4 durante o hackathon "Batalha de Dados Quantum". O objetivo principal do projeto é realizar a otimização de carteira de investimentos por meio de técnicas avançadas de processamento quântico de dados.
+Este repositório contém o código desenvolvido pela equipe 4 durante o hackathon "Batalha de Dados Quantum" em 2023 promovido pelo banco Itaú com apoio da IBM. 
+
+O objetivo principal do projeto é realizar a otimização de carteira de investimentos por meio de técnicas avançadas de processamento quântico de dados.
 
 ## Contexto
 
